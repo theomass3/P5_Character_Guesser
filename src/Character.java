@@ -1,7 +1,9 @@
 public class Character{
+    private String name;
     private boolean isAlive, isHuman, isDroid, hasForce, inANH, inESB, inROTJ, isMale, speaksEnglish, isGoodGuy;
 
-    public Character(boolean isAlive, boolean isHuman, boolean isDroid, boolean hasForce, boolean inANH, boolean inESB, boolean inROTJ, boolean isMale, boolean speaksEnglish, boolean isGoodGuy) {
+    public Character(String name, boolean isAlive, boolean isHuman, boolean isDroid, boolean hasForce, boolean inANH, boolean inESB, boolean inROTJ, boolean isMale, boolean speaksEnglish, boolean isGoodGuy) {
+        this.name = name;
         this.isAlive = isAlive;
         this.isHuman = isHuman;
         this.isDroid = isDroid;
@@ -12,6 +14,10 @@ public class Character{
         this.isMale = isMale;
         this.speaksEnglish = speaksEnglish;
         this.isGoodGuy = isGoodGuy;
+    }
+
+    public String getName() {
+        return name;
     }
 
     public boolean isAlive() {
@@ -26,7 +32,7 @@ public class Character{
         return isDroid;
     }
 
-    public boolean isHasForce() {
+    public boolean hasForce() {
         return hasForce;
     }
 
@@ -46,7 +52,7 @@ public class Character{
         return isMale;
     }
 
-    public boolean isSpeaksEnglish() {
+    public boolean speaksEnglish() {
         return speaksEnglish;
     }
 
