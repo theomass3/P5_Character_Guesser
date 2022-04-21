@@ -29,6 +29,12 @@ public class Main {
     }
 
     public static void main(String[] args) {
-//        ChNode Alive = new ChNode();
+        ChNode Alive = new ChNode(null, null, null);
+//        Left Branch
+
+
+
+
+//        Right Branch
     }
 }

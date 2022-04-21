@@ -6,11 +6,13 @@ public class ChNode implements TreeNode {
     private ChNode parent;
     private ChNode left;
     private ChNode right;
+    private int qValue;
 
-    public ChNode(ChNode parent, ChNode left, ChNode right) {
+    public ChNode(ChNode parent, ChNode left, ChNode right, int qValue) {
         this.parent = parent;
         this.left = left;
         this.right = right;
+        this.qValue = qValue;
     }
 
     @Override
