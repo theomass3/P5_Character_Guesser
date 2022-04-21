@@ -7,6 +7,11 @@ public class ChNode implements TreeNode {
     private ChNode left;
     private ChNode right;
 
+    public ChNode(ChNode parent, ChNode left, ChNode right) {
+        this.parent = parent;
+        this.left = left;
+        this.right = right;
+    }
 
     @Override
     public TreeNode getChildAt(int childIndex) {
