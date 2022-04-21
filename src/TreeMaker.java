@@ -1,7 +1,9 @@
 public class TreeMaker {
 
 
-    private CharacterTree tree = new CharacterTree();
+    private ChNode tree = new ChNode();
+
+
 
 
 }
