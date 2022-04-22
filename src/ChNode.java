@@ -15,6 +15,34 @@ public class ChNode implements TreeNode {
         this.qValue = qValue;
     }
 
+//    public void setParent(ChNode parent) {
+//        this.parent = parent;
+//    }
+
+//    public ChNode getLeft() {
+//        return left;
+//    }
+
+    public void setLeft(ChNode left) {
+        this.left = left;
+    }
+
+//    public ChNode getRight() {
+//        return right;
+//    }
+//
+    public void setRight(ChNode right) {
+        this.right = right;
+    }
+//
+//    public int getqValue() {
+//        return qValue;
+//    }
+//
+//    public void setqValue(int qValue) {
+//        this.qValue = qValue;
+//    }
+
     @Override
     public TreeNode getChildAt(int childIndex) {
         return null;
