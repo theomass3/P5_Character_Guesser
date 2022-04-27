@@ -30,7 +30,7 @@ public class Main {
 
     public static void main(String[] args) {
         ChNode alive1 = new ChNode(null, null, null, 1);
-//        Left Branch
+
         ChNode human2 = new ChNode(alive1, null, null, 1);
 
         ChNode force3 = new ChNode(human2, null, null, 1);
