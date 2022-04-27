@@ -39,7 +39,10 @@ public class TreeMaker {
         System.out.println(deserialize().printTree());
     }
 
+    public static void serialize(ChNode root){
+        String str = root.printTree() + "  ";
 
+    }
 
 }
 
