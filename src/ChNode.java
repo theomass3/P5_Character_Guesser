@@ -15,33 +15,37 @@ public class ChNode implements TreeNode {
         this.qValue = qValue;
     }
 
-//    public void setParent(ChNode parent) {
-//        this.parent = parent;
-//    }
+    public ChNode(int qValue) {
+        this.qValue = qValue;
+    }
 
-//    public ChNode getLeft() {
-//        return left;
-//    }
+        public void setParent(ChNode parent) {
+        this.parent = parent;
+    }
+
+    public ChNode getLeft() {
+        return left;
+    }
 
     public void setLeft(ChNode left) {
         this.left = left;
     }
 
-    //    public ChNode getRight() {
-//        return right;
-//    }
-//
+        public ChNode getRight() {
+        return right;
+    }
+
     public void setRight(ChNode right) {
         this.right = right;
     }
-//
-//    public int getqValue() {
-//        return qValue;
-//    }
-//
-//    public void setqValue(int qValue) {
-//        this.qValue = qValue;
-//    }
+
+    public int getqValue() {
+        return qValue;
+    }
+
+    public void setqValue(int qValue) {
+        this.qValue = qValue;
+    }
 
     @Override
     public TreeNode getChildAt(int childIndex) {
@@ -54,7 +58,7 @@ public class ChNode implements TreeNode {
     }
 
     @Override
-    public TreeNode getParent() {
+    public ChNode getParent() {
         return parent;
     }
 
@@ -80,9 +84,9 @@ public class ChNode implements TreeNode {
 
     public String printTree(){
         String str = "" + this.qValue;
-        if (this.left != null) str += "(" + this.left.printTree() + ")";
+        if (this.left != null) str += "(L" + this.left.printTree() + ")";
         else str += "n";
-        if (this.right != null) str += "(" + this.right.printTree() + ")";
+        if (this.right != null) str += "(R" + this.right.printTree() + ")";
         else str += "n";
         return str;
     }
