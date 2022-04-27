@@ -1,0 +1,10 @@
+0(L1(L3(L2(L8nn)n)(R2(L6nn)n))(R4(L7nn)(R2(L6nn)n)))(R2(L3(L1(L6nn)n)(R8nn))(R1(L3nn)(R5nn)))  
+Is this character alive at the end of Return of the Jedi?
+Is this character a human?
+Is this character Good?
+Is this character Force Sensitive?
+Is this character a Droid?
+Does this character appear in Return of the Jedi?
+Does this character appear in A New Hope?
+Does this character speak English?
+Is this character Male?
