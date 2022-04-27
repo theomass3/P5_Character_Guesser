@@ -77,4 +77,13 @@ public class ChNode implements TreeNode {
     public Enumeration<? extends TreeNode> children() {
         return null;
     }
+
+    public String printTree(){
+        String str = "" + this.qValue;
+        if (this.left != null) str += "(" + this.left.printTree() + ")";
+        else str += "n";
+        if (this.right != null) str += "(" + this.right.printTree() + ")";
+        else str += "n";
+        return str;
+    }
 }

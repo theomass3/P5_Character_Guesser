@@ -31,41 +31,41 @@ public class Main {
     public static void main(String[] args) {
         ChNode alive1 = new ChNode(null, null, null, 1);
 
-        ChNode human2 = new ChNode(alive1, null, null, 1);
+        ChNode human2 = new ChNode(alive1, null, null, 2);
 
-        ChNode force3 = new ChNode(human2, null, null, 1);
+        ChNode force3 = new ChNode(human2, null, null, 4);
 
-        ChNode good4 = new ChNode(force3, null, null, 1);
+        ChNode good4 = new ChNode(force3, null, null, 3);
 
-        ChNode male5 = new ChNode(good4, null, null, 1);
+        ChNode male5 = new ChNode(good4, null, null, 9);
 
-        ChNode good6 = new ChNode(force3, null, null, 1);
+        ChNode good6 = new ChNode(force3, null, null, 3);
 
-        ChNode anh7 = new ChNode(good6, null, null, 1);
+        ChNode anh7 = new ChNode(good6, null, null, 7);
 
-        ChNode droid8 = new ChNode(human2, null, null, 1);
+        ChNode droid8 = new ChNode(human2, null, null, 5);
 
-        ChNode english9 = new ChNode(droid8, null, null, 1);
+        ChNode english9 = new ChNode(droid8, null, null, 8);
 
-        ChNode good10 = new ChNode(droid8, null, null, 1);
+        ChNode good10 = new ChNode(droid8, null, null, 3);
 
-        ChNode anh20 = new ChNode(good10, null, null, 1);
+        ChNode anh20 = new ChNode(good10, null, null, 7);
 
-        ChNode good12 = new ChNode(alive1, null, null, 1);
+        ChNode good12 = new ChNode(alive1, null, null, 3);
 
-        ChNode force13 = new ChNode(good12, null, null, 1);
+        ChNode force13 = new ChNode(good12, null, null, 4);
 
-        ChNode human14 = new ChNode(force13, null, null, 1);
+        ChNode human14 = new ChNode(force13, null, null, 2);
 
-        ChNode anh15 = new ChNode(human14, null, null, 1);
+        ChNode anh15 = new ChNode(human14, null, null, 7);
 
-        ChNode male16 = new ChNode(force13, null, null, 1);
+        ChNode male16 = new ChNode(force13, null, null, 9);
 
-        ChNode human17 = new ChNode(force3, null, null, 1);
+        ChNode human17 = new ChNode(force3, null, null, 2);
 
-        ChNode force18 = new ChNode(force3, null, null, 1);
+        ChNode force18 = new ChNode(force3, null, null, 4);
 
-        ChNode rots19 = new ChNode(force3, null, null, 1);
+        ChNode rotj19 = new ChNode(force3, null, null, 6);
 
         alive1.setLeft(human2);
         human2.setLeft(force3);
@@ -91,10 +91,9 @@ public class Main {
         good12.setRight(human17);
         human17.setLeft(force18);
 
-        human17.setRight(rots19);
+        human17.setRight(rotj19);
 
-
-
+        System.out.println(alive1.printTree());
 
 
 
