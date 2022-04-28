@@ -1,0 +1,18 @@
+Dear Austin, we took a slightly different route for deserialize.
+Instead of taking in a parameter (String s), deserialize has no parameters,
+ yet it reads the tree in the form of a String from the first line of the file
+ "tree.txt" This can be changed if needed, but we figured it would be more convenient
+  to source the tree from the same file that we serialize it to. That way if we made a change to the tree
+  during runtime, that change would be persistent throughout different compilations of the code.
+
+  Best,
+  Theo and Luke
+
+  Acknowledgments:
+  This project was the work and ideas of Luke and Theo, yet we sought
+  some help from you (Austin) as well as we researched file
+  writing and manipulation from W3Schools and GeekForGeeks.
+
+  GeeksForGeeks: https://www.geeksforgeeks.org/different-ways-reading-text-file-java/
+
+  W3Schools: https://www.w3schools.com/java/java_files_create.asp
