@@ -1,4 +1,3 @@
-import jdk.swing.interop.SwingInterOpUtils;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -17,6 +16,7 @@ public class TreeMaker {
     }
 
     public static ChNode deserialize(){
+        // TODO: take the file path as a parameter for greater flexibility.
         String str = "";
         try {
             Scanner list = new Scanner(new File("resources/tree.txt"));
@@ -72,6 +72,7 @@ public class TreeMaker {
     }
 
     public static void serialize(ChNode root){
+        // TODO: take the file path as a parameter for greater flexibility.
         String str = root.printTree() + "  ";
         try{
             FileWriter writeTree = new FileWriter("resources/tree.txt");
